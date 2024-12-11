@@ -1,0 +1,4 @@
+npm init -y
+
+npm install express graphql express-graphql mongoose bcryptjs jsonwebtoken dotenv
+npm install --save-dev nodemon
