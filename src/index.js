@@ -5,6 +5,11 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+
+// Set up a route for the root path
+app.get('/', (req, res) => {
+  res.status(200).send('<h1>Welcome to My Node.js API!</h1><p>This API serves user data. Use the /api/users endpoint to interact with the user resources.</p>');
+});
 // GraphQL endpoint
 app.use(
   "/graphql",
